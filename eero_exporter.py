@@ -246,7 +246,7 @@ if __name__ == '__main__':
     else:
         port = 9118
     REGISTRY.register(JsonCollector())
-    print("starting http server")
+    print("starting http server on port {}".format(port))
     start_http_server(port)
 
     while True:
